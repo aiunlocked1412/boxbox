@@ -1,0 +1,26 @@
+{
+  "name": "boxbox-marketplace",
+  "owner": {
+    "name": "AI UNLOCKED",
+    "email": "aiunlocked1412@gmail.com",
+    "url": "https://github.com/aiunlocked1412"
+  },
+  "plugins": [
+    {
+      "name": "boxbox",
+      "source": "./",
+      "description": "Type /boxbox and get a beautiful, zoomable HTML diagram of your codebase. Built for non-coders who use AI to build apps.",
+      "version": "0.1.0",
+      "category": "documentation",
+      "tags": [
+        "visualization",
+        "architecture",
+        "diagram",
+        "no-code",
+        "vibe-coding",
+        "documentation",
+        "explainer"
+      ]
+    }
+  ]
+}

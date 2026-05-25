@@ -1,0 +1,6 @@
+.DS_Store
+node_modules/
+.boxbox/
+*.log
+.env
+.env.local
