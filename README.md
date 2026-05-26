@@ -16,7 +16,7 @@
 - 🎨 **Big colorful blocks** organized top-down: pages on top → API → backend → database → outside services.
 - 🖱️ **Click any block** to read a plain-English explanation of what it does.
 - 🔖 **Tech-stack badges** so you know what tools your app is built with.
-- 🌙 **Light & dark mode**, mobile-friendly, works offline once opened.
+- 🌙 **Dark mode by default** with a one-click toggle to light mode. Mobile-friendly. Works offline once the page has loaded once.
 - 🧠 **Powered by three AI agents** (scanner, analyzer, visualizer) that work together to understand your code.
 
 ---
@@ -67,7 +67,7 @@ Open it in your browser. Click any block. Done.
 /boxbox docs
 ```
 
-Saves to `docs/diagram.html`.
+Writes all three artifacts — `scan.json`, `graph.json`, and `diagram.html` — into `docs/` instead of `.boxbox/`.
 
 ---
 

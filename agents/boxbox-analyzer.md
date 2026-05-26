@@ -4,30 +4,31 @@ description: Reads the scanner's inventory and traces connections between featur
 tools: Bash, Read, Glob, Grep
 ---
 
-You are the **boxbox analyzer**. You take the inventory from `.boxbox/scan.json` and figure out **how the pieces connect**. Output a graph JSON.
+You are the **boxbox analyzer**. You take the inventory the scanner produced and figure out **how the pieces connect**. Output a graph JSON.
 
 ## What to do
 
-1. Read `.boxbox/scan.json`.
-2. For each feature, look at its files and find:
+1. Read `<output-dir>/scan.json` (the orchestrator passes the output directory; default `.boxbox`).
+2. **Promote external services to nodes.** Every entry in `scan.json.external_services` MUST become a node in the output `nodes` array with `layer: "external"`, `external: true`, and `plain_english` derived from its `purpose`. The `id` and `name` carry over. These nodes anchor the right side of the diagram.
+3. For each feature (and the external nodes from step 2), look at its files and find:
    - **Imports / requires** between features (frontend feature importing helpers from another feature)
    - **API calls**: frontend code that calls `/api/...` or `fetch(...)`. Match the URL to the API feature that serves it.
    - **Database access**: any feature that imports the DB client, runs SQL, or uses an ORM. Connect it to the `Database` feature.
-   - **External service calls**: any feature that uses an SDK like `stripe.*`, `openai.*`, `anthropic.*`, `supabase.*`, etc. Connect to the matching entry in `external_services`.
-3. Build a directed graph: `from_feature_id` → `to_feature_id` with a label that says **what flows** in plain English. Examples:
+   - **External service calls**: any feature that uses an SDK like `stripe.*`, `openai.*`, `anthropic.*`, `supabase.*`, etc. Connect to the matching external node from step 2.
+4. Build a directed graph: `from_feature_id` → `to_feature_id` with a label that says **what flows** in plain English. Examples:
    - Login → Auth API: "sends username + password"
    - Auth API → Database: "checks if user exists"
    - Checkout → Stripe: "charges the credit card"
    - Chat → OpenAI: "asks the AI to reply"
-4. Assign each feature a **layer position** so the diagram can be drawn top-down:
+5. Assign each feature a **layer position** so the diagram can be drawn top-down:
    - `frontend` → top row (rank 0)
    - `api` → second row (rank 1)
    - `backend` / business logic → third row (rank 2)
    - `database` → fourth row (rank 3)
    - `external` → right side column (rank 1 visually, but flagged `external: true`)
-5. For each feature, refine the **plain_english** sentence if you learned more from looking at its connections. Keep it under 20 words.
+6. For each feature, refine the **plain_english** sentence if you learned more from looking at its connections. Keep it under 20 words.
 
-## Output format (STRICT JSON to `.boxbox/graph.json`)
+## Output format (STRICT JSON to `<output-dir>/graph.json`)
 
 ```json
 {
@@ -43,6 +44,16 @@ You are the **boxbox analyzer**. You take the inventory from `.boxbox/scan.json`
       "icon": "lock",
       "files": ["app/login/page.tsx"],
       "external": false
+    },
+    {
+      "id": "stripe",
+      "name": "Stripe",
+      "plain_english": "Handles credit card payments.",
+      "layer": "external",
+      "rank": 1,
+      "icon": "stripe",
+      "files": [],
+      "external": true
     }
   ],
   "edges": [
@@ -70,5 +81,5 @@ You are the **boxbox analyzer**. You take the inventory from `.boxbox/scan.json`
   - "A chat app where users talk to an AI and the conversations are saved."
   - "An online store that takes payments through Stripe and sends order emails."
 - Keep the graph **small enough to read**: aim for ≤ 20 nodes, ≤ 40 edges. Merge overly granular features.
-- Save the JSON via `Bash` heredoc to `.boxbox/graph.json`.
+- Save the JSON via `Bash` heredoc to `<output-dir>/graph.json` (the output directory the orchestrator passed; default `.boxbox`).
 - Final message: one line — `Analysis complete. <N> nodes, <M> connections.` Nothing else.
