@@ -23,14 +23,18 @@
 
 ## Install
 
-### Option A — From a marketplace
+### Option A — From GitHub (recommended)
+
+In Claude Code, run:
 
 ```
-/plugin marketplace add aiunlocked1412/boxbox
+/plugin marketplace add https://github.com/aiunlocked1412/boxbox.git
 /plugin install boxbox@boxbox-marketplace
 ```
 
-### Option B — Local install (for testing)
+> **Why the full HTTPS URL?** The shorthand `owner/repo` syntax makes Claude Code clone via SSH, which fails if you haven't set up a GitHub SSH key. The HTTPS URL works for everyone, no setup required.
+
+### Option B — Local install (for testing or offline use)
 
 Clone the repo, then in Claude Code:
 

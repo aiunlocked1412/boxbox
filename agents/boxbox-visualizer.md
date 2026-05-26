@@ -38,7 +38,7 @@ Write **exactly this template**, substituting `/*__GRAPH_JSON__*/` with the cont
 
 ```html
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -118,7 +118,7 @@ Write **exactly this template**, substituting `/*__GRAPH_JSON__*/` with the cont
     <span id="project-name">System Map</span>
   </div>
   <div class="stack" id="stack"></div>
-  <button class="theme-btn" id="theme-btn">Dark mode</button>
+  <button class="theme-btn" id="theme-btn">Light mode</button>
 </header>
 
 <div class="headline" id="headline"></div>
@@ -300,6 +300,8 @@ themeBtn.onclick = () => {
   themeBtn.textContent = next === "dark" ? "Light mode" : "Dark mode";
   applyEdgeTheme(next);
 };
+
+applyEdgeTheme(document.documentElement.dataset.theme);
 
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") document.getElementById("panel").classList.remove("open");
