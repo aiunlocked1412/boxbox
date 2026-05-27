@@ -14,6 +14,10 @@
 
 ⭐ **If boxbox helps you understand your code, please [star the repo](https://github.com/aiunlocked1412/boxbox) — it really helps others discover it!**
 
+![boxbox diagram preview — a real project visualized in plain English](./assets/diagram-preview.jpg)
+
+> *A real boxbox diagram of an AI video/photo generator app — every block clickable, every connection in plain English.*
+
 `boxbox` is a Claude Code plugin for **non-coders who use AI to build apps**. Type `/boxbox` in any project and get a beautiful HTML diagram that explains what your app is, how it works, and what connects to what — written in plain English, not code-speak.
 
 > "Wait, so *this* is where users log in, and *this* talks to the AI? Oh, I get it now."
