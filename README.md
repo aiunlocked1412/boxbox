@@ -10,6 +10,10 @@
 [![by AI UNLOCKED](https://img.shields.io/badge/by-AI%20UNLOCKED-ec4899)](https://github.com/aiunlocked1412)
 [![Facebook](https://img.shields.io/badge/Facebook-AI%20UNLOCKED-1877F2?logo=facebook&logoColor=white)](https://www.facebook.com/aiunlockedvip)
 
+🌐 **Language / ภาษา:** **English** · [ไทย](./README.th.md)
+
+---
+
 **See your codebase as a friendly, zoomable picture.**
 
 ⭐ **If boxbox helps you understand your code, please [star the repo](https://github.com/aiunlocked1412/boxbox) — it really helps others discover it!**
