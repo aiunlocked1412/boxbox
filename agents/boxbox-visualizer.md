@@ -110,6 +110,9 @@ Write **exactly this template**, substituting `/*__GRAPH_JSON__*/` with the cont
   .credit a:hover { text-decoration:underline; }
   .credit-dot { width:10px; height:10px; border-radius:3px;
     background:linear-gradient(135deg,var(--frontend),var(--external)); }
+  .credit-sep { color:var(--muted); }
+  .credit-fb { display:inline-flex; align-items:center; gap:4px; color:#1877F2 !important; }
+  .credit-fb:hover { color:#0d65d9 !important; }
   @media (max-width: 640px) {
     header { flex-wrap:wrap; gap:10px; }
     .stack { order:3; width:100%; }
@@ -145,6 +148,11 @@ Write **exactly this template**, substituting `/*__GRAPH_JSON__*/` with the cont
   <span class="credit-dot"></span>
   Made with <a href="https://github.com/aiunlocked1412/boxbox" target="_blank" rel="noopener">boxbox</a>
   by <a href="https://github.com/aiunlocked1412" target="_blank" rel="noopener">AI UNLOCKED</a>
+  <span class="credit-sep">·</span>
+  <a href="https://www.facebook.com/aiunlockedvip" target="_blank" rel="noopener" class="credit-fb" aria-label="AI UNLOCKED on Facebook">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.77l-.44 2.89h-2.33v6.99A10 10 0 0 0 22 12z"/></svg>
+    Facebook
+  </a>
 </div>
 
 <aside class="panel" id="panel" aria-hidden="true">

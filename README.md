@@ -8,6 +8,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Claude Code Plugin](https://img.shields.io/badge/Claude%20Code-Plugin-7c3aed)](https://docs.claude.com/en/docs/claude-code)
 [![by AI UNLOCKED](https://img.shields.io/badge/by-AI%20UNLOCKED-ec4899)](https://github.com/aiunlocked1412)
+[![Facebook](https://img.shields.io/badge/Facebook-AI%20UNLOCKED-1877F2?logo=facebook&logoColor=white)](https://www.facebook.com/aiunlockedvip)
 
 **See your codebase as a friendly, zoomable picture.**
 
@@ -117,6 +118,11 @@ The result lives in `.boxbox/diagram.html` along with the intermediate `scan.jso
 ## Credits
 
 Made with ❤️ by **AI UNLOCKED**
+
+- 🌐 GitHub: [github.com/aiunlocked1412](https://github.com/aiunlocked1412)
+- 📘 Facebook Page: [facebook.com/aiunlockedvip](https://www.facebook.com/aiunlockedvip)
+
+Follow the page for more AI / Claude Code / vibe-coding tips 🚀
 
 ## License
 
