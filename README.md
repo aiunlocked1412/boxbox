@@ -16,13 +16,13 @@
 
 **See your codebase as a friendly, zoomable picture.**
 
-⭐ **If boxbox helps you understand your code, please [star the repo](https://github.com/aiunlocked1412/boxbox) — it really helps others discover it!**
+⭐ **If BoxBox helps you understand your code, please [star the repo](https://github.com/aiunlocked1412/boxbox) — it really helps others discover it!**
 
-![boxbox diagram preview — a real project visualized in plain English](./assets/diagram-preview.jpg)
+![BoxBox diagram preview — a real project visualized in plain English](./assets/diagram-preview.jpg)
 
-> *A real boxbox diagram of an AI video/photo generator app — every block clickable, every connection in plain English.*
+> *A real BoxBox diagram of an AI video/photo generator app — every block clickable, every connection in plain English.*
 
-`boxbox` is a Claude Code plugin for **non-coders who use AI to build apps**. Type `/boxbox` in any project and get a beautiful HTML diagram that explains what your app is, how it works, and what connects to what — written in plain English, not code-speak.
+**BoxBox** is a Claude Code plugin for **non-coders who use AI to build apps**. Type `/boxbox` in any project and get a beautiful HTML diagram that explains what your app is, how it works, and what connects to what — written in plain English, not code-speak.
 
 > "Wait, so *this* is where users log in, and *this* talks to the AI? Oh, I get it now."
 
@@ -98,7 +98,7 @@ Writes all three artifacts — `scan.json`, `graph.json`, and `diagram.html` —
 - **Designers & PMs** — anyone working alongside engineers who wants a shared mental model of the system.
 - **Anyone learning** — students looking at an open-source codebase for the first time.
 
-If you can read English, you can read a boxbox diagram.
+If you can read English, you can read a BoxBox diagram.
 
 ---
 

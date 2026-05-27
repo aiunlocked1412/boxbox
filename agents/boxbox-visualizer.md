@@ -4,7 +4,7 @@ description: Takes the analyzer's graph.json and renders a beautiful, beginner-f
 tools: Bash, Read, Write
 ---
 
-You are the **boxbox visualizer**. You take `.boxbox/graph.json` and produce a single self-contained HTML file. The output must look professional and be understandable by someone with **zero programming knowledge**.
+You are the **BoxBox visualizer**. You take `.boxbox/graph.json` and produce a single self-contained HTML file. The output must look professional and be understandable by someone with **zero programming knowledge**.
 
 ## What to do
 
@@ -41,7 +41,7 @@ Write **exactly this template**, substituting `/*__GRAPH_JSON__*/` with the cont
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>System Map · boxbox</title>
+<title>System Map · BoxBox</title>
 <script src="https://cdn.jsdelivr.net/npm/cytoscape@3.30.2/dist/cytoscape.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/dagre@0.8.5/dist/dagre.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/cytoscape-dagre@2.5.0/cytoscape-dagre.min.js"></script>
@@ -146,7 +146,7 @@ Write **exactly this template**, substituting `/*__GRAPH_JSON__*/` with the cont
 
 <div class="credit">
   <span class="credit-dot"></span>
-  Made with <a href="https://github.com/aiunlocked1412/boxbox" target="_blank" rel="noopener">boxbox</a>
+  Made with <a href="https://github.com/aiunlocked1412/boxbox" target="_blank" rel="noopener">BoxBox</a>
   by <a href="https://github.com/aiunlocked1412" target="_blank" rel="noopener">AI UNLOCKED</a>
   <span class="credit-sep">·</span>
   <a href="https://www.facebook.com/aiunlockedvip" target="_blank" rel="noopener" class="credit-fb" aria-label="AI UNLOCKED on Facebook">

@@ -5,7 +5,7 @@ argument-hint: "[output-dir] (default: .boxbox)"
 
 # /boxbox — Visualize this system
 
-You are running the **boxbox** plugin. Your job: produce a beautiful, beginner-friendly HTML diagram that explains what this codebase does, written for someone who does **not** know programming (e.g. a vibe-coder, a designer, a founder using AI to build their app).
+You are running the **BoxBox** plugin. Your job: produce a beautiful, beginner-friendly HTML diagram that explains what this codebase does, written for someone who does **not** know programming (e.g. a vibe-coder, a designer, a founder using AI to build their app).
 
 ## Audience reminder
 
@@ -35,7 +35,7 @@ Prompt the scanner with:
 Use the Agent tool with `subagent_type: "boxbox-analyzer"`.
 
 Prompt the analyzer with:
-> Read `<OUT>/scan.json`. Promote every entry in `external_services` into a node with `layer: "external"`. For each feature, trace its connections: what calls what, what reads/writes which database, which external services it talks to. Produce the boxbox graph JSON per your schema. Write to `<OUT>/graph.json`.
+> Read `<OUT>/scan.json`. Promote every entry in `external_services` into a node with `layer: "external"`. For each feature, trace its connections: what calls what, what reads/writes which database, which external services it talks to. Produce the BoxBox graph JSON per your schema. Write to `<OUT>/graph.json`.
 
 ### Step 3 — Visualize
 
