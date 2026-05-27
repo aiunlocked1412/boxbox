@@ -102,10 +102,19 @@ Write **exactly this template**, substituting `/*__GRAPH_JSON__*/` with the cont
     font-size:13px; border:1px solid var(--border); }
   .close-btn { background:transparent; border:none; font-size:22px; cursor:pointer;
     color:var(--muted); line-height:1; }
+  .credit { position:absolute; bottom:18px; right:18px; background:var(--card);
+    border:1px solid var(--border); border-radius:12px; padding:8px 14px;
+    box-shadow:var(--shadow); font-size:12px; color:var(--muted);
+    display:flex; align-items:center; gap:8px; z-index:5; }
+  .credit a { color:var(--fg); text-decoration:none; font-weight:600; }
+  .credit a:hover { text-decoration:underline; }
+  .credit-dot { width:10px; height:10px; border-radius:3px;
+    background:linear-gradient(135deg,var(--frontend),var(--external)); }
   @media (max-width: 640px) {
     header { flex-wrap:wrap; gap:10px; }
     .stack { order:3; width:100%; }
     aside.panel { width:100%; }
+    .credit { bottom:auto; top:8px; right:8px; font-size:11px; padding:6px 10px; }
   }
 </style>
 </head>
@@ -131,6 +140,12 @@ Write **exactly this template**, substituting `/*__GRAPH_JSON__*/` with the cont
 <div id="cy"></div>
 
 <div class="legend" id="legend"></div>
+
+<div class="credit">
+  <span class="credit-dot"></span>
+  Made with <a href="https://github.com/aiunlocked1412/boxbox" target="_blank" rel="noopener">boxbox</a>
+  by <a href="https://github.com/aiunlocked1412" target="_blank" rel="noopener">AI UNLOCKED</a>
+</div>
 
 <aside class="panel" id="panel" aria-hidden="true">
   <div class="panel-head">

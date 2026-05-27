@@ -1,8 +1,17 @@
 # 📦 boxbox
 
-> by **AI UNLOCKED**
+> by **[AI UNLOCKED](https://github.com/aiunlocked1412)**
+
+[![GitHub Repo](https://img.shields.io/badge/GitHub-aiunlocked1412%2Fboxbox-181717?logo=github)](https://github.com/aiunlocked1412/boxbox)
+[![Stars](https://img.shields.io/github/stars/aiunlocked1412/boxbox?style=social)](https://github.com/aiunlocked1412/boxbox/stargazers)
+[![Forks](https://img.shields.io/github/forks/aiunlocked1412/boxbox?style=social)](https://github.com/aiunlocked1412/boxbox/network/members)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Claude Code Plugin](https://img.shields.io/badge/Claude%20Code-Plugin-7c3aed)](https://docs.claude.com/en/docs/claude-code)
+[![by AI UNLOCKED](https://img.shields.io/badge/by-AI%20UNLOCKED-ec4899)](https://github.com/aiunlocked1412)
 
 **See your codebase as a friendly, zoomable picture.**
+
+⭐ **If boxbox helps you understand your code, please [star the repo](https://github.com/aiunlocked1412/boxbox) — it really helps others discover it!**
 
 `boxbox` is a Claude Code plugin for **non-coders who use AI to build apps**. Type `/boxbox` in any project and get a beautiful HTML diagram that explains what your app is, how it works, and what connects to what — written in plain English, not code-speak.
 
