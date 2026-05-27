@@ -1,6 +1,6 @@
 {
   "name": "boxbox",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "See your codebase as a friendly, zoomable picture. Built for non-coders who use AI to build apps — type /boxbox and get a beautiful HTML diagram of how your system works.",
   "author": {
     "name": "AI UNLOCKED",

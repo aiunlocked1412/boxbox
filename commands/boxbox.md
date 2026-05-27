@@ -54,6 +54,20 @@ After all three agents finish, tell the user in **one short paragraph**:
 
 Do **not** dump JSON or technical detail. Keep it warm and non-technical.
 
+## Offer to open the diagram
+
+After delivering the summary paragraph, ask the user whether they want to open the diagram in their default browser right now. Use the `AskUserQuestion` tool with a single yes/no question (e.g. "Open the diagram in your browser now?").
+
+If the user answers **yes**, open the file using the right command for the host OS — detect it from the `Platform` line in your environment:
+
+- macOS (`darwin`): `open "<OUT>/diagram.html"`
+- Linux: `xdg-open "<OUT>/diagram.html"`
+- Windows: `start "" "<OUT>\diagram.html"`
+
+Run that command via the Bash tool. If it fails, fall back to printing the absolute file path so the user can open it manually.
+
+If the user answers **no**, just acknowledge briefly and stop — do not open anything.
+
 ## Arguments
 
 `$ARGUMENTS` — optional output directory (default `.boxbox`). All three artifacts (`scan.json`, `graph.json`, `diagram.html`) are written into this directory.

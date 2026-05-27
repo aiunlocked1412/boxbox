@@ -59,7 +59,9 @@ That's it. After about a minute you'll see:
 Diagram ready at ./.boxbox/diagram.html
 ```
 
-Open it in your browser. Click any block. Done.
+Then `/boxbox` will ask if you want to **open the diagram in your browser right now**. Say yes and it'll launch automatically (works on macOS, Linux, and Windows). Say no and you can open it yourself whenever you're ready.
+
+Click any block. Done.
 
 ### Custom output directory
 
