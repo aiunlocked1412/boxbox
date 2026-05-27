@@ -1,4 +1,4 @@
-# 📦 boxbox
+# 📦 BoxBox
 
 > โดย **[AI UNLOCKED](https://github.com/aiunlocked1412)**
 
